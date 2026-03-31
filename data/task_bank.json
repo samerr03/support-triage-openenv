@@ -1,0 +1,20 @@
+[
+  {
+    "task_id": "easy_billing_refund",
+    "difficulty": "easy",
+    "title": "Double charge refund",
+    "domain": "customer_support"
+  },
+  {
+    "task_id": "medium_shipping_missing_info",
+    "difficulty": "medium",
+    "title": "Missing delivery with missing details",
+    "domain": "customer_support"
+  },
+  {
+    "task_id": "hard_enterprise_security_incident",
+    "difficulty": "hard",
+    "title": "Enterprise security incident",
+    "domain": "customer_support"
+  }
+]
