@@ -35,9 +35,9 @@ def tasks():
 
 
 @app.post("/reset")
-def reset(req: ResetRequest):
-    obs = env.reset(task_id=req.task_id)
-    return obs.model_dump()
+def reset():
+    obs = env.reset()
+    return {"observation": obs}
 
 
 @app.get("/state")
@@ -49,8 +49,8 @@ def state():
 def step(action: Action):
     obs, reward, done, info = env.step(action)
     return {
-        "observation": obs.model_dump(),
-        "reward": reward.model_dump(),
+        "observation": obs,
+        "reward": reward,
         "done": done,
         "info": info
     }
